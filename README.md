@@ -15,7 +15,7 @@ The repository is by purpose private for the time being.
 * It must not be made public without explicit permission of the active committers.
 * The Activity is closely related to the [SSRS](https://github.com/openETCS/SSRS) activities.
 * We will definitly need the material collected in the SSRS [wiki](https://github.com/openETCS/SSRS/wiki).
-* 
+
 
 ### Organisational Issues:
 * Weekly Meeting: Wednesday, 09:00 - 10:00 https://global.gotomeeting.com/join/462271837
