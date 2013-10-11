@@ -7,7 +7,9 @@ WP3 Repository for SysML modelling of the SRS
 
 * This repository is part of WP3.
 * Owner: Pierre-Francois Jauquet (Alstom)
-
+* Process Mentor: Klaus-Rüdiger Hase
+* Domain Mentor: Marc Behrens
+* 
 =============================================
 
 In our Braunschweig workshop on WP3 activities we agreed to concentrate activities for getting SysML modelling started in this repository.
