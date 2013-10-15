@@ -21,9 +21,5 @@ The repository is by purpose private for the time being.
 
 ### Organisational Issues:
 * Weekly Meeting: Wednesday, 09:00 - 10:00 https://global.gotomeeting.com/join/462271837
-* Description of Work: tbd
-* Content: tbd
+* Description of Work: to be provided
 
-
-### Important Documents 
-* ERSA Interface and other Document ==> [**WP5**](https://github.com/openETCS/demonstrator/tree/master/Documentation) 
