@@ -1,0 +1,180 @@
+Store Configuration Data Notes
+
+Results for "config" and "param" searches in Alstom API proposal :
+
+Configuration Data (Store):
+- train_configuration_data
+  - {activate_output_on_DA_state} N
+  - adhesion_independent_brake_config
+  - antenna_configuration
+  - allowed_train_inputs
+  - allowed_train_outputs
+  - EVC_connected_to_SB
+  - circuit_breaker_open_for_change_of_traction_power
+  - circuit_breaker_open_for_powerless_section
+  - circuit_breaker_open_for_powerless_section_pantograph
+  - cylinder_brake_pipe_pressure
+  - delay_cut_off
+  - delay_close_circuit_breaker
+  - delay_lower_panto
+  - delay_open_circuit_breaker
+  - delay_raise_panto
+  - dist_desk_antenna
+  - EB_application_monitoring_timer
+  - EB_release_monitoring_timer
+  - EB_sw_cmd
+  - engine_length
+  - main_brake_pipe_pressure
+  - NL_input_signal
+  - panto_down_for_powerless_section
+  - panto_down_for_change_of_traction_power
+  - panto_position_method
+  - panto_window_start_distance
+  - panto_window_end_distance
+  - SB_application_monitoring_timer
+  - SB_release_monitoring_timer
+  - SB_speed_limit_for_deceleration
+  - traction_cut_off_application_monitoring_timer
+  - traction_cut_off_for_powerless_section_pantograph
+  - traction_cut_off_for_powerless_section_circuit_breaker
+  - traction_cut_off_for_change_of_traction_power
+  - traction_cut_off_release_monitoring_timer
+  - train_IOs_to_monitor
+  - train_wheel_diameter
+  - ZUB_vitality
+- onboard_configuration_data
+  - activate_functions
+  - Alstom_EBI_derivation
+  - avoid_auto_radio_connection_during_SOM
+  - brake_delay_class_table
+  - carriage_length
+  - config_info_for_track_condition_management
+  - config_STM_parameter_info
+  - deceleration_class_table
+  - deceleration_rate_on_brake_models
+  - default_values
+  - delay_display_geogr_pos
+  - delay_icon_no_connection
+  - delay_to_declare_illicit_power
+  - delay_for_network_registration_during_data_entry
+  - display_driver_id_predefined_value
+  - driver_id_screen_skipped
+  - driver_interface_data
+  - DV_RS
+  - EB_test_info
+  - EVC_delay
+  - EVC_validity_delay_function
+  - fixed_data_set_selection_table
+  - fixed_texts_list
+  - fixed_values
+  - force_level_entry_during_SOM
+  - G
+  - hw_and_sw_versions
+  - hysteresis_for_speed_threshold
+  - INAT_data
+  - kind_of_data_entry
+  - l_engine
+  - manage_q_nvsrbktrg_for_ceiling_speed_monitoring
+  - max_dist_between_2_balises_of_same_bg
+  - max_front_end_CES_acceptance_distance
+  - max_time_for_an_STM_to_enter_an_ordered_state
+  - max_time_for_an_STM_to_enter_DA_state
+  - max_time_for_an_STM_to_send_a_data_request
+  - nid_xusers_for_spanish_doors_function
+  - nid_xusers_for_alstom_specific_functions
+  - NSB_gradient_correction_factors
+  - number_of_bogies_per_carriage
+  - number_of_carriages_allowed
+  - onboard_available_ERTMS_levels
+  - onboard_ETCS_id
+  - onboard_supported_ERTMS_langage_versions
+  - onboard_telephone_numbers
+  - overspeed_threshold
+  - part_of_the_train_to_consider_for_conditional_ES
+  - planning_area_displaying_modes
+  - predefined_values_validated
+  - radio_msg_repetition_delay
+  - radio_network_id_can_be_changed
+  - reaction_in_case_of_DMI_failure
+  - regenerative_brake_used_with_contact_with_catenary
+  - release_speed_display
+  - rotating_mass_model
+  - SB_feedback
+  - SB_fitted
+  - Short_number
+  - specific_brake_models
+  - speed_threshold
+  - sets_of_corrections_factors
+  - special_brakes_interface
+  - SRS_Brake_Percentage_Def
+  - STM_manager_data
+  - STM_functionality_is_used
+  - summer_winter_table
+  - t_waitmsg
+  - tbl1_config_parameters
+  - traction_cut_off_on_warning
+  - traindataview_STM_response_timeout
+  - traindataentry_STM_response_timeout
+  - train_max_acc_table
+  - trn_screen_skipped
+  - type_of_data_entry_behaviour
+  - use_of_maintenance_parameters_plug
+  - way_to_command_EB1_and_EB2
+  - NTC_STM_lookup_table
+- maintenance_configuration_data
+  - wheel_diameter_A
+  - wheel_diameter_B
+  - inter_correlation_coeff_A
+  - inter_correlation_coeff_B
+  - doppler_coeff_A
+  - doppler_coeff_B
+  - radar_coeff_1
+  - radar_coeff_2
+  - accelerometer_bias
+
+See also :
+- config_data_to_odo
+- config_info_for_mgt_in_planning_area
+  - config_info_for_track_conditions_mgt_in_planning_area
+  - gradient_profile_to_display_in_planning_area
+  - tip_to_display_in_planning_area
+  - speed_profile_to_display_on_planning_area
+- config_info_for_track_condition_management
+  - N{release_on_tail}N
+- config_info_for_track_conditions_mgt_in_planning_area
+  - 16{track_condition_displayed}16
+  - big_metal_masses_displayed
+  - change_of_traction_power_displayed.
+- config_STM_parameter_info
+  - {nid_STM} N +
+  - {STM_name} N +
+  - {STM_transmission_is_continuous} N +
+  - {spec_max_time_for_an_STM_to_enter_an_ordered_state} N +
+  - {spec_max_time_for_an_STM_to_enter_DA_state} N +
+  - {spec_max_time_for_an_STM_to_send_a_data_request} N +
+  - {STM_display_in_NL_authorised} N +
+  - {STM_baseline} N +
+  - {P16_FA_order_extend_appl_delay} N.
+- brake degraded status
+- eurokvb configuration
+- brake_interface_parameters_to_STM
+- EVC_validity_delay_function
+  - 0 {EVC_validity_is_present} 1
+  - 0 {n_of_hours_of_EVC_reset_request_anticipation} 1
+  - 0 {n_of_hours_of_EVC_validity} 1
+  - TCO_application_for_EVC_reset
+- INAT_data
+  - INAT_monitoring_timer
+  - INAT_state_actions_table
+  - INAT_EB_inhibition_is_used
+  - INAT_antenna_inhibition_is_used
+  - INAT_EB_inhibition_delay
+  - INAT_vitality_add_delay_for_EB_release
+  - INAT_monitoring_timer
+- MA_request_parameters
+- odometer_parameters
+- P16_FA_order_extend_appl_delay
+- STM_manager_data
+  - version of "FFFIS Specific Transmission Module" document supported onboard (SUBSET-035)
+  - version of "FFFIS STM Application Layer" document supported onboard (SUBSET-058)
+  - version of "SRS Class 1" document supported onbard
