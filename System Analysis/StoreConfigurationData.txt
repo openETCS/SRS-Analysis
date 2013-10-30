@@ -178,3 +178,72 @@ See also :
   - version of "FFFIS Specific Transmission Module" document supported onboard (SUBSET-035)
   - version of "FFFIS STM Application Layer" document supported onboard (SUBSET-058)
   - version of "SRS Class 1" document supported onbard
+
+List of Fixed Value Data in Subset-26 chapter 3 annexe A.3.1 :
+- The number of times to try to establish a safe radio connection : 3 times
+- Repetition of radio messages (i.e. excluding the first sending) : 3 times
+- Waiting time before radio message repetition : 15 s
+- Speed difference between Permitted speed and Emergency Brake Intervention supervision limits, minimum value : 7.5 km/h = dV_ebi_min
+- Speed difference between Permitted speed and Emergency Brake Intervention supervision limits, maximum value : 15 km/h = dV_ebi_max
+- Value of MRSP where dV_ebi starts to increase to dV_ebi_max : 110 km/h = V_ebi_min
+- Value of MRSP where dV_ebi stops to increase to dV_ebi_max : 210 km/h = V_ebi_max
+- Speed difference between Permitted speed and Service Brake Intervention supervision limits, minimum value : 5.5 km/h = dV_sbi_min
+- Speed difference between Permitted speed and Service Brake Intervention supervision limits, maximum value : 10 km/h = dV_sbi_max
+- Value of MRSP where dV_sbi starts to increase to dV_sbi_max : 110 km/h = V_sbi_min
+- Value of MRSP where dV_sbi stops to increase to dV_sbi_max : 210 km/h = V_sbi_max
+- Speed difference between Permitted speed and Warning supervision limits, minimum value : 4 km/h = dV_warning_min
+- Speed difference between Permitted speed and Warning supervision limits, maximum value : 5 km/h = dV_warning_max
+- Value of MRSP where dV_warning starts to increase to dV_warning_max : 110 km/h = V_warning_min
+- Value of MRSP where dV_warning stops to increase to dV_warning_max : 140 km/h = V_warning_max
+- Time between Warning supervision limit and FLOI : 2 s = T_warning
+- Driver reaction time between Permitted speed supervision limit and FLOI : 4 s = T_driver
+- Time between the pre-indication location and the indication supervision limit valid for MRSP speed. : 7 s = T_preindication
+- Maximum possible rotating mass as a percentage of the total weight of the train : 15 % = M_rotating_max
+- Minimum possible rotating mass as a percentage of the total weight of the train : 2 % = M_rotating_min
+- Compensation of the speed measurement inaccuracy used for the calculation of speed restriction to ensure given permitted braking distance : 5 km/h = 
+- MA request repetition cycle, default value : 60 s = TCYCRQSTD
+- Mode transitions: Driver acknowledgement time : 5 s = TACK
+- Maximum time to maintain a communication session in case of failed re-connection attempts : 5 minutes = 
+- Distance of metal immunity in Levels 0/NTC : 300 metres = D_Metal
+- Driver reaction time before sounding the horn : 4 s = 
+- Time between minimum safe rear end of the train leaving a track condition area and on-board deleting the applicable indication : 5 s = 
+- Distance to keep on-board information in rear of the min safe rear end of the train : 300 metres = 
+- Additional delay time to disconnection on supervision of safe radio connection : 60 s = 
+- “Connection status” timer for safe radio connection indication : 45 s = 
+
+List of National/Default Data in Subset-26 chapter 3 annexe A.3.1 :
+ - Modification of adhesion factor by driver : Not allowed = Q_NVDRIVER_ADHES
+ - Shunting mode speed limit : 30km/h = V_NVSHUNT
+ - Staff Responsible mode speed limit : 40km/h = V_NVSTFF
+ - On Sight mode speed limit : 30km/h = V_NVONSIGHT
+ - Limited Supervision mode speed limit : 100 km/h = V_NVLIMSUPERV
+ - Unfitted mode speed limit : 100km/h = V_NVUNFIT
+ - Release Speed : 40km/h = V_NVREL
+ - Distance to be used in Roll Away protection, Reverse movement protection and Standstill supervision : 2m = D_NVROLL
+ - Permission to use service brake in target speed monitoring : Yes = Q_NVSBTSMPERM
+ - Permission to release emergency brake : Only at standstill = Q_NVEMRRLS
+ - Permission to use guidance curves : No = Q_NVGUIPERM
+ - Permission to use the service brake feedback : No = Q_NVSBFBPERM
+ - Permission to inhibit the compensation of the speed measurement inaccuracy : No = Q_NVINHSMICPERM
+ - Speed limit for triggering the override function : 0km/h = V_NVALLOWOVTRP 
+ - Override speed limit to be supervised when the “override” function is active  : 30 km/h = V_NVSUPOVTRP 
+ - Distance for train trip suppression when override function is triggered : 200m = D_NVOVTRP
+ - Max. time for train trip suppression when override function is triggered : 60 s = T_NVOVTRP
+ - Change of driver ID permitted while running : Yes = M_NVDERUN
+ - System reaction if radio channel monitoring time limit expires (T-Contact) : No reaction = M_NVCONTACT
+ - Maximum time since creation in the RBC of last received telegram. : "loop" = T_NVCONTACT
+ - Distance to be allowed for reversing in Post Trip mode. : 200 m = D_NVPOTRP
+ - Max permitted distance to run in Staff Responsible mode : "loop" = D_NVSTFF
+ - Default location accuracy of a balise group : 12 m = Q_NVLOCACC
+ - Weighting factor for available wheel/rail adhesion : 0 = M_NVAVADH
+ - Confidence level for emergency brake safe deceleration on dry rails : 99.9999999 % = M_NVEBCL
+ - Train length step used for the integrated correction factor Kr_int : N/A = L_NVKRINT
+ - Train length dependent integrated correction factor Kr_int : 0.9 = M_NVKRINT*
+ - Speed step used for the integrated correction factor Kv_int : N/A = V_NVKVINT
+ - Speed dependent integrated correction factor Kv_int : 0.7 = M_NVKVINT*
+ - Integrated correction factor for brake build up time : 1.1 = M_NVKTINT
+ - Maximum deceleration value under reduced adhesion conditions (1) : 1.0 m/s2 = A_NVMAXREDADH1
+ - Maximum deceleration value under reduced adhesion conditions (2) : 0.7 m/s2 = A_NVMAXREDADH2
+ - Maximum deceleration value under reduced adhesion conditions (3) : 0.7 m/s2 = A_NVMAXREDADH3
+ - Lower deceleration limit to determine the set of Kv_int to be used : N/A = A_NVP12
+ - Upper deceleration limit to determine the set of Kv_int to be used : N/A = A_NVP23
