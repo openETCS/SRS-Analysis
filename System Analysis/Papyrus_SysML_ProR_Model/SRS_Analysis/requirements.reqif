@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0">
+  <THE-HEADER>
+    <REQ-IF-HEADER IDENTIFIER="rmf-4473e2cd-e609-418f-902a-5753b7908b01">
+      <COMMENT>Created by: yg</COMMENT>
+      <CREATION-TIME>2013-10-23T10:01:11.109+02:00</CREATION-TIME>
+      <REQ-IF-TOOL-ID>ProR (http://pror.org)</REQ-IF-TOOL-ID>
+      <REQ-IF-VERSION>1.0.1</REQ-IF-VERSION>
+      <SOURCE-TOOL-ID>ProR (http://pror.org)</SOURCE-TOOL-ID>
+    </REQ-IF-HEADER>
+  </THE-HEADER>
+  <CORE-CONTENT>
+    <REQ-IF-CONTENT>
+      <DATATYPES>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_R9CfUDu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="T_String32k" MAX-LENGTH="32000"/>
+      </DATATYPES>
+      <SPEC-TYPES>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_R9CfUTu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="Requirement Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_R9CfUju5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_R9CfUDu5EeOhCa-ASInFcQ</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_h9frMDu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:02:53.500+02:00" LONG-NAME="ID">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_R9CfUDu5EeOhCa-ASInFcQ</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_pjkrwDu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:03:44.765+02:00" LONG-NAME="Splitting reason">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_R9CfUDu5EeOhCa-ASInFcQ</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_JpW3QDvMEeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:16:08.906+02:00" LONG-NAME="Subset26Reference">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_R9CfUDu5EeOhCa-ASInFcQ</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPECIFICATION-TYPE IDENTIFIER="_R9CfUzu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="Specification Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_R9CfVDu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_R9CfUDu5EeOhCa-ASInFcQ</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPECIFICATION-TYPE>
+      </SPEC-TYPES>
+      <SPEC-OBJECTS>
+        <SPEC-OBJECT IDENTIFIER="_R9CfVTu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:33:34.062+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Part 3.6.6 of Subset-026-3">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_R9CfUju5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Geographical position reporting">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_h9frMDu5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="3.6.6">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_JpW3QDvMEeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_R9CfUTu5EeOhCa-ASInFcQ</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_jCKQYDu9EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:15:15.171+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The Kernel shall provide the geographical position of the estimated front end of the train in relation to the track kilometre to the DMI.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_R9CfUju5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Reduce kernel function">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_pjkrwDu5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_R9CfUTu5EeOhCa-ASInFcQ</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_U64O0DvMEeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:34:21.281+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The ERTMS/ETCS on-board equipment shall display, only on driver request,  the geographical position of the estimated front end of the train in relation to the track kilometre. The display of the geographical position shall also be stopped on driver request.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_R9CfUju5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="3.6.6.1">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_JpW3QDvMEeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_R9CfUTu5EeOhCa-ASInFcQ</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_bEaY4DvMEeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:34:27.046+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The DMI shall display, on driver request, the geographical position of the estimated front end of the train in relation to the track kilometre. The display of the geographical position shall also be stopped on driver request.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_R9CfUju5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_R9CfUTu5EeOhCa-ASInFcQ</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+      </SPEC-OBJECTS>
+      <SPECIFICATIONS>
+        <SPECIFICATION IDENTIFIER="_R9CfVju5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00" LONG-NAME="Specification Document">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Requirements Document">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_R9CfVDu5EeOhCa-ASInFcQ</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_R9CfUzu5EeOhCa-ASInFcQ</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_R9CfVzu5EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T10:01:11.109+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_R9CfVTu5EeOhCa-ASInFcQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN>
+                <SPEC-HIERARCHY IDENTIFIER="_U7BYwDvMEeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:17:26.531+02:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_U64O0DvMEeOhCa-ASInFcQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN>
+                    <SPEC-HIERARCHY IDENTIFIER="_jCUBYDu9EeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:17:35.062+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_jCKQYDu9EeOhCa-ASInFcQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_bEkJ4DvMEeOhCa-ASInFcQ" LAST-CHANGE="2013-10-23T12:18:08.125+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_bEaY4DvMEeOhCa-ASInFcQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                  </CHILDREN>
+                </SPEC-HIERARCHY>
+              </CHILDREN>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+      </SPECIFICATIONS>
+    </REQ-IF-CONTENT>
+  </CORE-CONTENT>
+  <TOOL-EXTENSIONS>
+    <REQ-IF-TOOL-EXTENSION>
+      <configuration:ProrToolExtension>
+        <configuration:specViewConfigurations>
+          <configuration:ProrSpecViewConfiguration specification="_R9CfVju5EeOhCa-ASInFcQ">
+            <configuration:columns>
+              <configuration:Column label="ID" width="100"/>
+              <configuration:Column label="Subset26Reference"/>
+              <configuration:Column label="Splitting reason" width="144"/>
+              <configuration:Column label="Description" width="500"/>
+            </configuration:columns>
+            <configuration:leftHeaderColumn>
+              <configuration:Column label="Lead Header Column" width="30"/>
+            </configuration:leftHeaderColumn>
+          </configuration:ProrSpecViewConfiguration>
+        </configuration:specViewConfigurations>
+        <configuration:generalConfiguration>
+          <configuration:ProrGeneralConfiguration>
+            <configuration:labelConfiguration>
+              <configuration:LabelConfiguration>
+                <defaultLabel>Description</defaultLabel>
+              </configuration:LabelConfiguration>
+            </configuration:labelConfiguration>
+          </configuration:ProrGeneralConfiguration>
+        </configuration:generalConfiguration>
+        <configuration:presentationConfigurations>
+          <configuration:ProrPresentationConfigurations/>
+        </configuration:presentationConfigurations>
+      </configuration:ProrToolExtension>
+    </REQ-IF-TOOL-EXTENSION>
+  </TOOL-EXTENSIONS>
+</REQ-IF>
