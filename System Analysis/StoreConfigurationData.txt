@@ -6,15 +6,15 @@ Configuration Data (Store):
 - train_configuration_data
   - {activate_output_on_DA_state} N
   - adhesion_independent_brake_config
-  - antenna_configuration
+  - antenna_configuration = number of antennas <- no occurrence in Subset 26
   - allowed_train_inputs
   - allowed_train_outputs
   - EVC_connected_to_SB
-  - circuit_breaker_open_for_change_of_traction_power
-  - circuit_breaker_open_for_powerless_section
-  - circuit_breaker_open_for_powerless_section_pantograph
-  - cylinder_brake_pipe_pressure
-  - delay_cut_off
+  - circuit_breaker_open_for_change_of_traction_power <- not fixed, depends on section, may be transmitted through a message
+  - circuit_breaker_open_for_powerless_section <- not fixed, depends on section, may be transmitted through a message
+  - circuit_breaker_open_for_powerless_section_pantograph <- not fixed, depends on section, may be transmitted through a message
+  - cylinder_brake_pipe_pressure <- p_cylinder (in kPa) cf. Subset-26-3 A.3.10.3
+  - delay_cut_off <- T_traction_cut_off cf. 3.13.2.2.1.4
   - delay_close_circuit_breaker
   - delay_lower_panto
   - delay_open_circuit_breaker
@@ -24,8 +24,8 @@ Configuration Data (Store):
   - EB_release_monitoring_timer
   - EB_sw_cmd
   - engine_length
-  - main_brake_pipe_pressure
-  - NL_input_signal
+  - main_brake_pipe_pressure <- p (in kPa) cf. Subset-26-3 A.3.10.3, A.3.10.4
+  - NL_input_signal <- not fixed, this is an information sent by Train Interface cf. Subset-26-4 4.4.15.1.1.2
   - panto_down_for_powerless_section
   - panto_down_for_change_of_traction_power
   - panto_position_method
@@ -40,8 +40,8 @@ Configuration Data (Store):
   - traction_cut_off_for_change_of_traction_power
   - traction_cut_off_release_monitoring_timer
   - train_IOs_to_monitor
-  - train_wheel_diameter
-  - ZUB_vitality
+  - train_wheel_diameter <- no occurrence in Subset-26
+  - ZUB_vitality <- no occurrence in Subset-26
 - onboard_configuration_data
   - activate_functions
   - Alstom_EBI_derivation
@@ -93,12 +93,12 @@ Configuration Data (Store):
   - part_of_the_train_to_consider_for_conditional_ES
   - planning_area_displaying_modes
   - predefined_values_validated
-  - radio_msg_repetition_delay
+  - radio_msg_repetition_delay <- Waiting time before radio message repetition : 15s, in A3.1 Fixed values
   - radio_network_id_can_be_changed
   - reaction_in_case_of_DMI_failure
   - regenerative_brake_used_with_contact_with_catenary
   - release_speed_display
-  - rotating_mass_model
+  - rotating_mass_model <- Minimum (2% = M_rotating_min) and maximum (15% = M_rotating_max) possible rotating mass as a percentage of the total weight of the train, in A3.1 Fixed values
   - SB_feedback
   - SB_fitted
   - Short_number
