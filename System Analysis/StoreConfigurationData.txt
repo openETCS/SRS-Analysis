@@ -171,7 +171,8 @@ See also :
   - INAT_EB_inhibition_delay
   - INAT_vitality_add_delay_for_EB_release
   - INAT_monitoring_timer
-- MA_request_parameters
+- MA Request Parameters : are sent by the RBC through packet 57
+- Position Report Parameters : are sent by the RBC through packet 58
 - odometer_parameters
 - P16_FA_order_extend_appl_delay
 - STM_manager_data
