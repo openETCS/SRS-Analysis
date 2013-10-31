@@ -90,11 +90,6 @@
       <packagedElement xmi:type="uml:DataType" xmi:id="_PAq38DyBEeOxws0tMvLAWQ" name="GeographicalPosition"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_9FopMDyVEeOxws0tMvLAWQ" name="RouteSuitabilitySupervision_Subset026-3-3.12.2">
-      <packagedElement xmi:type="uml:Actor" xmi:id="_Dm3hkDyWEeOxws0tMvLAWQ" name="Driver"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_Ga36QDyWEeOxws0tMvLAWQ" name="Train"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_Kx-dYDyWEeOxws0tMvLAWQ" name="Trackside"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_NSddIDyWEeOxws0tMvLAWQ" name="ERTMS/ETCS on-board equipment"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_R_UN0DyWEeOxws0tMvLAWQ" name="Route"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_lWfd4DyWEeOxws0tMvLAWQ" name="LoadingGauge">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_xGkOIDygEeOxws0tMvLAWQ" name="routesuitabilitydata" type="_nUIDsDygEeOxws0tMvLAWQ" association="_xGbEMDygEeOxws0tMvLAWQ"/>
       </packagedElement>
@@ -114,25 +109,29 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KpnqQDykEeOxws0tMvLAWQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KqNgIDykEeOxws0tMvLAWQ" value="*"/>
         </ownedAttribute>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_O1LWoDyiEeOxws0tMvLAWQ" name="connector1">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_O1LWoDyiEeOxws0tMvLAWQ" name="RouteSuitabilityData">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_O1LWoTyiEeOxws0tMvLAWQ" role="_G4sTIDygEeOxws0tMvLAWQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_O1LWojyiEeOxws0tMvLAWQ" partWithPort="_gFORMzyZEeOxws0tMvLAWQ" role="_HVD0IDyiEeOxws0tMvLAWQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_mUs8IDyiEeOxws0tMvLAWQ" name="connector2">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_mUs8IDyiEeOxws0tMvLAWQ" name="TrainSuitabilityData">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_mUs8ITyiEeOxws0tMvLAWQ" partWithPort="_n_mfEzyfEeOxws0tMvLAWQ" role="_SJhcQDyiEeOxws0tMvLAWQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_mUs8IjyiEeOxws0tMvLAWQ" partWithPort="_gFORMzyZEeOxws0tMvLAWQ" role="_TnP-gDyiEeOxws0tMvLAWQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_43SGgDyiEeOxws0tMvLAWQ" name="connector3">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_43SGgDyiEeOxws0tMvLAWQ" name="ListOfUnsuitabilities">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_43SGgTyiEeOxws0tMvLAWQ" partWithPort="_gFORMzyZEeOxws0tMvLAWQ" role="_pJdiwDyiEeOxws0tMvLAWQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_43SGgjyiEeOxws0tMvLAWQ" partWithPort="_fipvozyZEeOxws0tMvLAWQ" role="_yEUk8DyiEeOxws0tMvLAWQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_bTUc4DyjEeOxws0tMvLAWQ" name="connector4">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_bTUc4DyjEeOxws0tMvLAWQ" name="ClosestUnsuitabilityLocation">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_bTUc4TyjEeOxws0tMvLAWQ" partWithPort="_fipvozyZEeOxws0tMvLAWQ" role="_Fo6l8DyjEeOxws0tMvLAWQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_bTUc4jyjEeOxws0tMvLAWQ" partWithPort="_nMC7MzyfEeOxws0tMvLAWQ" role="_QjLUEDyjEeOxws0tMvLAWQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_cyFg8DyjEeOxws0tMvLAWQ" name="connector5">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_cyFg8DyjEeOxws0tMvLAWQ" name="ListOfUnsuitabilities">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_cyFg8TyjEeOxws0tMvLAWQ" partWithPort="_gFORMzyZEeOxws0tMvLAWQ" role="_pJdiwDyiEeOxws0tMvLAWQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_cyFg8jyjEeOxws0tMvLAWQ" role="_49Ea4DyhEeOxws0tMvLAWQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ljW-sEJIEeOPebMSwaYmEQ" name="TrainLocation">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ljYz4EJIEeOPebMSwaYmEQ" partWithPort="_n_mfEzyfEeOxws0tMvLAWQ" role="_NjKVEEJIEeOPebMSwaYmEQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ljYz4UJIEeOPebMSwaYmEQ" partWithPort="_fipvozyZEeOxws0tMvLAWQ" role="_c0M2MEJIEeOPebMSwaYmEQ"/>
         </ownedConnector>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_nBGToDyYEeOxws0tMvLAWQ" name="ReplaceMAData">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fipvpDyZEeOxws0tMvLAWQ" name="routesuitabilitysupervision" type="_16nsoDyYEeOxws0tMvLAWQ" association="_fipvoDyZEeOxws0tMvLAWQ"/>
@@ -141,6 +140,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WODWwTykEeOxws0tMvLAWQ" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_Fo6l8DyjEeOxws0tMvLAWQ" name="ClosestUnsuitabilityLocation" type="_nWe3UDykEeOxws0tMvLAWQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_c0M2MEJIEeOPebMSwaYmEQ" name="TrainLocation" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_i7lPwDyYEeOxws0tMvLAWQ" name="CompareSuitabilityData">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gFORNDyZEeOxws0tMvLAWQ" name="routesuitabilitysupervision" type="_16nsoDyYEeOxws0tMvLAWQ" association="_gFORMDyZEeOxws0tMvLAWQ"/>
@@ -154,6 +154,7 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_dvgIQDyfEeOxws0tMvLAWQ" name="TrainDataStorage">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_n_mfFDyfEeOxws0tMvLAWQ" name="routesuitabilitysupervision" type="_16nsoDyYEeOxws0tMvLAWQ" association="_n_mfEDyfEeOxws0tMvLAWQ"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_SJhcQDyiEeOxws0tMvLAWQ" name="TrainData" type="_nUIDsDygEeOxws0tMvLAWQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NjKVEEJIEeOPebMSwaYmEQ" name="TrainLocation" aggregation="composite"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_hozVEDyfEeOxws0tMvLAWQ" name="MADataStorage">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nMMsMDyfEeOxws0tMvLAWQ" name="routesuitabilitysupervision" type="_16nsoDyYEeOxws0tMvLAWQ" association="_nMC7MDyfEeOxws0tMvLAWQ"/>
@@ -209,8 +210,15 @@
       <packagedElement xmi:type="uml:DataType" xmi:id="_4tP5YDylEeOxws0tMvLAWQ" name="T_Speed"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_7YII0EIXEeOtN-HbA2BJhQ" name="StoreConfigurationData">
-      <packagedElement xmi:type="uml:Class" xmi:id="_A1280EIYEeOtN-HbA2BJhQ" name="StoreConfigurationData"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_A1280EIYEeOtN-HbA2BJhQ" name="StoreConfigurationData">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rlqowEIvEeOPebMSwaYmEQ" name="AdhesionIndependentBrakeConfig" visibility="public" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Dm3hkDyWEeOxws0tMvLAWQ" name="Driver"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Ga36QDyWEeOxws0tMvLAWQ" name="Train"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Kx-dYDyWEeOxws0tMvLAWQ" name="Trackside"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_NSddIDyWEeOxws0tMvLAWQ" name="ERTMS/ETCS on-board equipment"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_R_UN0DyWEeOxws0tMvLAWQ" name="Route"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tp_BYDsSEeOBwZmy2iuqYw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tp_BYTsSEeOBwZmy2iuqYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -316,4 +324,7 @@
   <PortAndFlows:FlowPort xmi:id="_Fo6l8TyjEeOxws0tMvLAWQ" base_Port="_Fo6l8DyjEeOxws0tMvLAWQ" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_QjVFEDyjEeOxws0tMvLAWQ" base_Port="_QjLUEDyjEeOxws0tMvLAWQ" direction="in"/>
   <Blocks:Block xmi:id="_A2At0EIYEeOtN-HbA2BJhQ" base_Class="_A1280EIYEeOtN-HbA2BJhQ"/>
+  <PortAndFlows:FlowPort xmi:id="_rluTIEIvEeOPebMSwaYmEQ" base_Port="_rlqowEIvEeOPebMSwaYmEQ" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_NjLjMEJIEeOPebMSwaYmEQ" base_Port="_NjKVEEJIEeOPebMSwaYmEQ" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_c0OEUEJIEeOPebMSwaYmEQ" base_Port="_c0M2MEJIEeOPebMSwaYmEQ" direction="in"/>
 </xmi:XMI>

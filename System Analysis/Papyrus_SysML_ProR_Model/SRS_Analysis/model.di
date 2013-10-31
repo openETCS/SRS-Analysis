@@ -23,7 +23,10 @@
       <windows>
         <children xsi:type="di:TabFolder">
           <children>
-            <emfPageIdentifier href="model.notation#_SYg7QEIYEeOtN-HbA2BJhQ"/>
+            <emfPageIdentifier href="model.notation#_7kRcwDyYEeOxws0tMvLAWQ"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="model.notation#_S2IK8DyfEeOxws0tMvLAWQ"/>
           </children>
         </children>
       </windows>
