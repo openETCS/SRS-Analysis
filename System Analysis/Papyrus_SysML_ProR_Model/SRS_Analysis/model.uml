@@ -147,6 +147,7 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_GxHC8EetEeOD_uLtyj9IHw" name="StartLocation">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_TbIehEetEeOD_uLtyj9IHw" name="t_routesuitabilitydata" type="_nUIDsDygEeOxws0tMvLAWQ" association="_TbIegEetEeOD_uLtyj9IHw"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_u4posUhfEeOIe4UW6ZQ5mQ" name="t_location" type="__sq0gDyjEeOxws0tMvLAWQ" association="_u4mlYEhfEeOIe4UW6ZQ5mQ"/>
           </nestedClassifier>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_7yfOsEerEeOD_uLtyj9IHw" name="Association9" memberEnd="_7yfOs0erEeOD_uLtyj9IHw _7yfOtEerEeOD_uLtyj9IHw">
@@ -206,6 +207,7 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_w20rAEeuEeOD_uLtyj9IHw" name="StartLocation">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_O4xbtEevEeOD_uLtyj9IHw" name="t_unsuitability" type="_i7SkQEeuEeOD_uLtyj9IHw" association="_O4xbsEevEeOD_uLtyj9IHw"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Z4khIEhfEeOIe4UW6ZQ5mQ" name="t_location" type="__sq0gDyjEeOxws0tMvLAWQ" association="_Z4hd0EhfEeOIe4UW6ZQ5mQ"/>
           </nestedClassifier>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_O4xbsEevEeOD_uLtyj9IHw" name="Association16" memberEnd="_O4xbs0evEeOD_uLtyj9IHw _O4xbtEevEeOD_uLtyj9IHw">
@@ -218,6 +220,18 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pe61sUevEeOD_uLtyj9IHw" key="nature" value="SysML_Nature"/>
           </eAnnotations>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Z4hd0EhfEeOIe4UW6ZQ5mQ" name="Association18" memberEnd="_Z4khIEhfEeOIe4UW6ZQ5mQ _Z4lIMEhfEeOIe4UW6ZQ5mQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z4jTAEhfEeOIe4UW6ZQ5mQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z4j6EEhfEeOIe4UW6ZQ5mQ" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Z4lIMEhfEeOIe4UW6ZQ5mQ" name="startlocation" type="_w20rAEeuEeOD_uLtyj9IHw" association="_Z4hd0EhfEeOIe4UW6ZQ5mQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_u4mlYEhfEeOIe4UW6ZQ5mQ" name="Association19" memberEnd="_u4posUhfEeOIe4UW6ZQ5mQ _u4qPwEhfEeOIe4UW6ZQ5mQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u4pBoEhfEeOIe4UW6ZQ5mQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u4posEhfEeOIe4UW6ZQ5mQ" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_u4qPwEhfEeOIe4UW6ZQ5mQ" name="startlocation" type="_GxHC8EetEeOD_uLtyj9IHw" association="_u4mlYEhfEeOIe4UW6ZQ5mQ"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_7YII0EIXEeOtN-HbA2BJhQ" name="StoreConfigurationData">
         <packagedElement xmi:type="uml:Class" xmi:id="_A1280EIYEeOtN-HbA2BJhQ" name="StoreConfigurationData">
@@ -228,8 +242,6 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
         <packagedElement xmi:type="uml:Class" xmi:id="_6u0OYEevEeOD_uLtyj9IHw" name="FilterInformationFromERTMSTrackside">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_1CTa4EfYEeOTgeIBStzg7Q" name="RouteSuitabilityData" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_piSiEEfdEeOTgeIBStzg7Q" name="Packet70/207" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_RN6iwEfeEeOTgeIBStzg7Q" name="Packet11" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_Z4wL8EfeEeOTgeIBStzg7Q" name="TrainSuitabilityData" aggregation="composite"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HfGC8EewEeOD_uLtyj9IHw" name="EVC-Kernel">
@@ -241,6 +253,7 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
         <ownedAttribute xmi:type="uml:Property" xmi:id="_tYBIYEfbEeOTgeIBStzg7Q" name="" type="_jljIwEfbEeOTgeIBStzg7Q" aggregation="composite" association="_tYC9kEfbEeOTgeIBStzg7Q"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_Sz-XEEfdEeOTgeIBStzg7Q" name="Packet70/207" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_S6-W8EfdEeOTgeIBStzg7Q" name="Packet11" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1x_poEhgEeOIe4UW6ZQ5mQ" name="" type="_L5RfQEhgEeOIe4UW6ZQ5mQ" aggregation="composite" association="_1yPhQEhgEeOIe4UW6ZQ5mQ"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_AweSMEfZEeOTgeIBStzg7Q" name="RouteSuitabilityData">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_AwfgUEfZEeOTgeIBStzg7Q" partWithPort="_VuvGwEfXEeOTgeIBStzg7Q" role="_1CTa4EfYEeOTgeIBStzg7Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_AwfgUUfZEeOTgeIBStzg7Q" partWithPort="_oYx1wEewEeOD_uLtyj9IHw" role="_G4sTIDygEeOxws0tMvLAWQ"/>
@@ -265,13 +278,13 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
           <end xmi:type="uml:ConnectorEnd" xmi:id="_tZ0NQEfdEeOTgeIBStzg7Q" role="_Sz-XEEfdEeOTgeIBStzg7Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_tZ00UEfdEeOTgeIBStzg7Q" partWithPort="_VuvGwEfXEeOTgeIBStzg7Q" role="_piSiEEfdEeOTgeIBStzg7Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_WEqPQEfeEeOTgeIBStzg7Q" name="Packet11">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_WEq2UEfeEeOTgeIBStzg7Q" partWithPort="_VuvGwEfXEeOTgeIBStzg7Q" role="_RN6iwEfeEeOTgeIBStzg7Q"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_WEq2UUfeEeOTgeIBStzg7Q" role="_S6-W8EfdEeOTgeIBStzg7Q"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_HQLXwEhhEeOIe4UW6ZQ5mQ" name="">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_HQObEEhhEeOIe4UW6ZQ5mQ" partWithPort="_vCOSUEfZEeOTgeIBStzg7Q" role="_7hXTkEfZEeOTgeIBStzg7Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_HQPCIEhhEeOIe4UW6ZQ5mQ" partWithPort="_1x_poEhgEeOIe4UW6ZQ5mQ" role="_Z4wL8EfeEeOTgeIBStzg7Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_h6lUYEfeEeOTgeIBStzg7Q" name="connector1">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_h6l7cEfeEeOTgeIBStzg7Q" partWithPort="_vCOSUEfZEeOTgeIBStzg7Q" role="_7hXTkEfZEeOTgeIBStzg7Q"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_h6l7cUfeEeOTgeIBStzg7Q" partWithPort="_VuvGwEfXEeOTgeIBStzg7Q" role="_Z4wL8EfeEeOTgeIBStzg7Q"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_PWn6cEhhEeOIe4UW6ZQ5mQ" name="Packet11">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_PWpvoEhhEeOIe4UW6ZQ5mQ" partWithPort="_1x_poEhgEeOIe4UW6ZQ5mQ" role="_RN6iwEfeEeOTgeIBStzg7Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_PWqWsEhhEeOIe4UW6ZQ5mQ" role="_S6-W8EfdEeOTgeIBStzg7Q"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_oY7mwEewEeOD_uLtyj9IHw" name="Association1" memberEnd="_oYx1wEewEeOD_uLtyj9IHw _oY7mw0ewEeOD_uLtyj9IHw">
@@ -329,6 +342,18 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tYC9kkfbEeOTgeIBStzg7Q" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_tYC9k0fbEeOTgeIBStzg7Q" name="evc-kernel" type="_HfGC8EewEeOD_uLtyj9IHw" association="_tYC9kEfbEeOTgeIBStzg7Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eVXAEEhgEeOIe4UW6ZQ5mQ" name="ManageRadioSessions">
+        <packagedElement xmi:type="uml:Class" xmi:id="_L5RfQEhgEeOIe4UW6ZQ5mQ" name="ManageRadioSessions">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_RN6iwEfeEeOTgeIBStzg7Q" name="Packet11" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Z4wL8EfeEeOTgeIBStzg7Q" name="TrainSuitabilityData" aggregation="composite"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1yPhQEhgEeOIe4UW6ZQ5mQ" name="Association7" memberEnd="_1x_poEhgEeOIe4UW6ZQ5mQ _1yPhQ0hgEeOIe4UW6ZQ5mQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1yPhQUhgEeOIe4UW6ZQ5mQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1yPhQkhgEeOIe4UW6ZQ5mQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1yPhQ0hgEeOIe4UW6ZQ5mQ" name="evc-kernel" type="_HfGC8EewEeOD_uLtyj9IHw" association="_1yPhQEhgEeOIe4UW6ZQ5mQ"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tp_BYDsSEeOBwZmy2iuqYw">
@@ -455,4 +480,5 @@ When entering any other mode (except non-relevant modes SF and IS), stored route
   <PortAndFlows:FlowPort xmi:id="_piTwMEfdEeOTgeIBStzg7Q" base_Port="_piSiEEfdEeOTgeIBStzg7Q" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_RN7w4EfeEeOTgeIBStzg7Q" base_Port="_RN6iwEfeEeOTgeIBStzg7Q" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_Z4yBIEfeEeOTgeIBStzg7Q" base_Port="_Z4wL8EfeEeOTgeIBStzg7Q" direction="in"/>
+  <Blocks:Block xmi:id="_L5W-0EhgEeOIe4UW6ZQ5mQ" base_Class="_L5RfQEhgEeOIe4UW6ZQ5mQ"/>
 </xmi:XMI>
