@@ -23,3 +23,13 @@ The repository is by purpose private for the time being.
 * Weekly Meeting: Wednesday, 09:00 - 10:00 https://global.gotomeeting.com/join/462271837
 * Description of Work: to be provided
 
+
+=============================================
+
+The repository is organized as follow:
+* InputDocuments directory: all the documents provided by the partners to start system analysis
+* Meetings: agenda, slides and minutes of the meetings
+* System Analysis: working directory for the system analysis
+* Templates: useful templates for the analysis
+
+
