@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Allocations="http://www.eclipse.org/papyrus/0.7.0/SysML/Allocations" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Allocations http://www.eclipse.org/papyrus/0.7.0/SysML#//allocations http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
-  <uml:Model xmi:id="_tl0TEDsSEeOBwZmy2iuqYw" name="SRS-Analysis">
+  <uml:Model xmi:id="_tl0TEDsSEeOBwZmy2iuqYw" name="EVC-Kernel Model">
     <packagedElement xmi:type="uml:Actor" xmi:id="_Dm3hkDyWEeOxws0tMvLAWQ" name="Driver"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_Ga36QDyWEeOxws0tMvLAWQ" name="Train"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_Kx-dYDyWEeOxws0tMvLAWQ" name="Trackside"/>

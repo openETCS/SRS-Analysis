@@ -30,11 +30,7 @@
     </pageList>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0">
       <windows>
-        <children xsi:type="di:TabFolder">
-          <children>
-            <emfPageIdentifier href="model.notation#_S2IK8DyfEeOxws0tMvLAWQ"/>
-          </children>
-        </children>
+        <children xsi:type="di:TabFolder"/>
       </windows>
     </sashModel>
   </di:SashWindowsMngr>
