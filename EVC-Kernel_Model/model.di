@@ -35,10 +35,10 @@
       <windows>
         <children xsi:type="di:TabFolder">
           <children>
-            <emfPageIdentifier href="model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
+            <emfPageIdentifier href="model.notation#_cWq30E3cEeOt6onMc6NYxA"/>
           </children>
           <children>
-            <emfPageIdentifier href="model.notation#_cWq30E3cEeOt6onMc6NYxA"/>
+            <emfPageIdentifier href="model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
           </children>
           <children>
             <emfPageIdentifier href="model.notation#_SVPaoFEHEeO7P43e0b1Sog"/>

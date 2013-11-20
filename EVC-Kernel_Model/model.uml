@@ -545,7 +545,7 @@
               <value xsi:nil="true"/>
             </defaultValue>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_EUnbsFELEeO7P43e0b1Sog" name="TrippModeRequest" visibility="public" aggregation="composite">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_EUnbsFELEeO7P43e0b1Sog" name="TripModeRequest" visibility="public" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fu5BUFELEeO7P43e0b1Sog" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fu5oYFELEeO7P43e0b1Sog" value="1"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_Fu62gFELEeO7P43e0b1Sog">

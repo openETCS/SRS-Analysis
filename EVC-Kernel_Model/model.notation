@@ -3138,7 +3138,7 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3CFR4k3ZEeOt6onMc6NYxA" points="[10, -2, -44, -75]$[54, -2, 0, -75]$[54, 63, 0, -10]"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_cWq30E3cEeOt6onMc6NYxA" type="InternalBlock" name="FilterInformationFromERTMSTrackside" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_cWq30E3cEeOt6onMc6NYxA" type="InternalBlock" name="FilterInformationFromERTMSTracksideInterfaces" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_cWq30U3cEeOt6onMc6NYxA" type="shape_sysml_block_as_composite" fontName="Ubuntu" fontHeight="11" lineColor="0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cWq30k3cEeOt6onMc6NYxA" source="ShadowFigure">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cWq3003cEeOt6onMc6NYxA" key="ShadowFigure_Value" value="false"/>
@@ -4386,7 +4386,7 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_nbRjwVEIEeO7P43e0b1Sog" x="30" y="-20"/>
             </children>
             <element xmi:type="uml:Port" href="model.uml#_nbOgcFEIEeO7P43e0b1Sog"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nbQ8sVEIEeO7P43e0b1Sog" x="206" y="35" width="20" height="20"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nbQ8sVEIEeO7P43e0b1Sog" x="191" y="35" width="20" height="20"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_uV9d8FEIEeO7P43e0b1Sog" type="shape_sysml_flowport_as_affixed" fontName="Ubuntu" fontHeight="11" lineColor="0">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uV-sEFEIEeO7P43e0b1Sog" source="ShadowFigure">
@@ -4446,7 +4446,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c7q74VEJEeO7P43e0b1Sog" x="-10" y="100" width="20" height="20"/>
           </children>
           <element xmi:type="uml:Property" href="model.uml#_mxh4oFEHEeO7P43e0b1Sog"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mxmKEVEHEeO7P43e0b1Sog" x="150" y="45" width="216" height="126"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mxmKEVEHEeO7P43e0b1Sog" x="150" y="45" width="201" height="126"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_whDR8FEHEeO7P43e0b1Sog" type="shape_sysml_blockproperty_as_composite" fontName="Ubuntu" fontHeight="11" lineColor="0">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_whD5AFEHEeO7P43e0b1Sog" source="ShadowFigure">
@@ -4685,10 +4685,10 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_PG7uw1ELEeO7P43e0b1Sog" x="30" y="-20"/>
         </children>
         <element xmi:type="uml:Port" href="model.uml#_PG2PMFELEeO7P43e0b1Sog"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PG7HsVELEeO7P43e0b1Sog" x="901" y="130" width="20" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PG7HsVELEeO7P43e0b1Sog" x="1036" y="130" width="20" height="20"/>
       </children>
       <element xmi:type="uml:Class" href="model.uml#_FZmF0E3hEeOt6onMc6NYxA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SVPaq1EHEeO7P43e0b1Sog" x="15" y="-10" width="911" height="396"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SVPaq1EHEeO7P43e0b1Sog" x="15" y="-10" width="1046" height="396"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_SVParFEHEeO7P43e0b1Sog"/>
     <element xmi:type="uml:Class" href="model.uml#_FZmF0E3hEeOt6onMc6NYxA"/>
