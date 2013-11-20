@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Operator kind="function" name="manage_LRBG">
+			<inputs>
+				<Variable name="linkingInformationIsUsedOnboard">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/ffe3/4162/1A98/528b2fc4471e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>3.6.2.2.2 a): Designates if linking information is used on-board</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+				<Variable name="linkingElements">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3e7db/6004/2358/528a3bbe601c"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="listOfLRBGs">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ListOfLRBGs_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3e7d3/6004/2358/528a3b626f90" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>Actual list of the last relevant balise groups</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+				<Variable name="actual_LRBG_ONB">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="BaliseGroup_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/ffd8/4162/1A98/528b2e5a50e0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>3.6.2.2.2 a) The actual LRBG to be used by the OBU</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3e7e4/6004/2358/528a3bf375ab"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ListOfLRBGs_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4e825/6004/2358/528a3e4b484c"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L3">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/ffe5/4162/1A98/528b303b114b"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="BaliseGroup_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/200bd/4162/1A98/528b51912792"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = linkingElements; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="linkingElements"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/3e7e3/6004/2358/528a3bf37436"/>
+					</pragmas>
+				</Equation>
+				<!-- listOfLRBGs = _L2; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="listOfLRBGs"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/3e7e5/6004/2358/528a3bf34d0e"/>
+					</pragmas>
+				</Equation>
+				<!-- _ = _L1; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/3e7ec/6004/2358/528a3bf87f2f"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = cListOfLRBGs_empty; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="cListOfLRBGs_empty"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4e824/6004/2358/528a3e4b6797"/>
+					</pragmas>
+				</Equation>
+				<!-- _L3 = linkingInformationIsUsedOnboard; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L3"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="linkingInformationIsUsedOnboard"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/ffe4/4162/1A98/528b303b57ed"/>
+					</pragmas>
+				</Equation>
+				<!-- _ = _L3; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/ffeb/4162/1A98/528b30406d72"/>
+					</pragmas>
+				</Equation>
+				<!-- actual_LRBG_ONB = _L4; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="actual_LRBG_ONB"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fff0/4162/1A98/528b3048ff1"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 = cBG_invalid; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="cBG_invalid"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/200bc/4162/1A98/528b51914b8f"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/3e7cb/6004/2358/528a3ac31747" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+					<comment>3.6.2.1, 3.6.2.2 : </comment>
+					<comment>Generates and maintains the list of LRBGs</comment>
+					<diagrams>
+						<NetDiagram name="diagram_manage_LRBG_1" landscape="true" format="A4 (210 297)" oid="!ed/3e7cc/6004/2358/528a3ac32d1c">
+							<comment>Maintains and provide the list of last relevant balise groups. </comment>
+							<presentationElements>
+								<EquationGE presentable="!ed/3e7e3/6004/2358/528a3bf37436">
+									<position>
+										<Point x="5001" y="3466"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/3e7e5/6004/2358/528a3bf34d0e">
+									<position>
+										<Point x="18256" y="3334"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/3e7ec/6004/2358/528a3bf87f2f">
+									<position>
+										<Point x="6562" y="3466"/>
+									</position>
+									<size>
+										<Size width="503" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/3e7e3/6004/2358/528a3bf37436" dstEquation="!ed/3e7ec/6004/2358/528a3bf87f2f">
+									<positions>
+										<Point x="5265" y="3731"/>
+										<Point x="6033" y="3731"/>
+										<Point x="6033" y="3731"/>
+										<Point x="6826" y="3731"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/4e824/6004/2358/528a3e4b6797">
+									<position>
+										<Point x="15610" y="3440"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4e824/6004/2358/528a3e4b6797" dstEquation="!ed/3e7e5/6004/2358/528a3bf34d0e">
+									<positions>
+										<Point x="15822" y="3598"/>
+										<Point x="16828" y="3598"/>
+										<Point x="16828" y="3598"/>
+										<Point x="18309" y="3598"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/ffe4/4162/1A98/528b303b57ed">
+									<position>
+										<Point x="5001" y="5689"/>
+									</position>
+									<size>
+										<Size width="264" height="502"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/ffeb/4162/1A98/528b30406d72">
+									<position>
+										<Point x="6562" y="5662"/>
+									</position>
+									<size>
+										<Size width="502" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ffe4/4162/1A98/528b303b57ed" dstEquation="!ed/ffeb/4162/1A98/528b30406d72">
+									<positions>
+										<Point x="5265" y="5953"/>
+										<Point x="6033" y="5953"/>
+										<Point x="6033" y="5953"/>
+										<Point x="6826" y="5953"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/fff0/4162/1A98/528b3048ff1">
+									<position>
+										<Point x="18256" y="5609"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/200bc/4162/1A98/528b51914b8f">
+									<position>
+										<Point x="15610" y="5715"/>
+									</position>
+									<size>
+										<Size width="211" height="318"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/200bc/4162/1A98/528b51914b8f" dstEquation="!ed/fff0/4162/1A98/528b3048ff1">
+									<positions>
+										<Point x="15822" y="5874"/>
+										<Point x="17066" y="5874"/>
+										<Point x="17066" y="5874"/>
+										<Point x="18309" y="5874"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

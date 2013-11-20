@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Operator kind="function" name="LinkingPacketToLinkingElements">
+			<inputs>
+				<Variable name="linkingPacket">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingPacket_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/d60e/7339/14D4/52822e3653b5"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="linkingElements">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/d64b/7339/14D4/52822ed540cf"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingPacket_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/d656/7339/14D4/52822f226b60"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="LinkingElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1d7c3/7339/14D4/528248b05952"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = linkingPacket; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="linkingPacket"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/d655/7339/14D4/52822f222a84"/>
+					</pragmas>
+				</Equation>
+				<!-- linkingElements = _L2; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="linkingElements"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/d65b/7339/14D4/52822f257dd8"/>
+					</pragmas>
+				</Equation>
+				<!-- _ = _L1; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/d660/7339/14D4/52822f2c10ef"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = cLinkingElements_invalid; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="cLinkingElements_invalid"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/1d7c2/7339/14D4/528248b01ffb"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/d60c/7339/14D4/52822de16e2e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+					<comment>Converts a Linking Packet into an array of single linking elements</comment>
+					<diagrams>
+						<NetDiagram name="diagram_LinkingPacketToLinkingElements_1" landscape="true" format="A4 (210 297)" oid="!ed/d60d/7339/14D4/52822de15e15">
+							<presentationElements>
+								<EquationGE presentable="!ed/d655/7339/14D4/52822f222a84">
+									<position>
+										<Point x="4710" y="3651"/>
+									</position>
+									<size>
+										<Size width="265" height="502"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/d65b/7339/14D4/52822f257dd8">
+									<position>
+										<Point x="25056" y="3836"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/d660/7339/14D4/52822f2c10ef">
+									<position>
+										<Point x="6641" y="3651"/>
+									</position>
+									<size>
+										<Size width="503" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/d655/7339/14D4/52822f222a84" dstEquation="!ed/d660/7339/14D4/52822f2c10ef">
+									<positions>
+										<Point x="4974" y="3916"/>
+										<Point x="5927" y="3916"/>
+										<Point x="5927" y="3916"/>
+										<Point x="6906" y="3916"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/1d7c2/7339/14D4/528248b01ffb">
+									<position>
+										<Point x="21087" y="3969"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1d7c2/7339/14D4/528248b01ffb" dstEquation="!ed/d65b/7339/14D4/52822f257dd8">
+									<positions>
+										<Point x="21299" y="4128"/>
+										<Point x="23204" y="4128"/>
+										<Point x="23204" y="4101"/>
+										<Point x="25109" y="4101"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
