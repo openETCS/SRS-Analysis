@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Operator kind="function" name="validateProfileData">
+			<inputs>
+				<Variable name="receivedProfileData">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ReceivedProfileData_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3023a/4162/1A98/528b5f095430" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>Profile data reveived from balise group, loop or RBC</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+				<Variable name="listOfLRBGs">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ListOfLRBGs_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3024a/4162/1A98/528b5f48579f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>Actual list of the last relevant balise groups</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="profileElements">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ProfileElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3024b/4162/1A98/528b5f906e0d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+							<comment>List of profile elements with nominal location assigned and ordered by nominal location</comment>
+						</ed:Variable>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ReceivedProfileData_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/30265/4162/1A98/528b60c24d63"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ListOfLRBGs_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/30267/4162/1A98/528b60c2191c"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L3">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="ProfileElements_Type"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/45ade/4162/1A98/528b61c650cb"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = receivedProfileData; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="receivedProfileData"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/30264/4162/1A98/528b60c23070"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = listOfLRBGs; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="listOfLRBGs"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/30266/4162/1A98/528b60c25d53"/>
+					</pragmas>
+				</Equation>
+				<!-- profileElements = _L3; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="profileElements"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/30268/4162/1A98/528b60c2324"/>
+					</pragmas>
+				</Equation>
+				<!-- _ = _L1; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/3026e/4162/1A98/528b60c82b4c"/>
+					</pragmas>
+				</Equation>
+				<!-- _ = _L2; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/30274/4162/1A98/528b60cb6e88"/>
+					</pragmas>
+				</Equation>
+				<!-- _L3 = cListOfProfileElements_empty; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L3"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="cListOfProfileElements_empty"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/45add/4162/1A98/528b61c6674b"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/30238/4162/1A98/528b5e502a58" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+					<comment>3.6.3.2 : </comment>
+					<comment>Checks whether received profile data containing location references shall be taken in account for the actual train orientation.</comment>
+					<diagrams>
+						<NetDiagram name="diagram_validateProfileData_1" landscape="true" format="A4 (210 297)" oid="!ed/30239/4162/1A98/528b5e501b32">
+							<presentationElements>
+								<EquationGE presentable="!ed/30264/4162/1A98/528b60c23070">
+									<position>
+										<Point x="5821" y="5318"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/30266/4162/1A98/528b60c25d53">
+									<position>
+										<Point x="5821" y="6350"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/30268/4162/1A98/528b60c2324">
+									<position>
+										<Point x="21008" y="5900"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/3026e/4162/1A98/528b60c82b4c">
+									<position>
+										<Point x="6985" y="5265"/>
+									</position>
+									<size>
+										<Size width="503" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/30274/4162/1A98/528b60cb6e88">
+									<position>
+										<Point x="6826" y="6429"/>
+									</position>
+									<size>
+										<Size width="503" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30264/4162/1A98/528b60c23070" dstEquation="!ed/3026e/4162/1A98/528b60c82b4c">
+									<positions>
+										<Point x="6085" y="5583"/>
+										<Point x="6668" y="5583"/>
+										<Point x="6668" y="5530"/>
+										<Point x="7250" y="5530"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30266/4162/1A98/528b60c25d53" dstEquation="!ed/30274/4162/1A98/528b60cb6e88">
+									<positions>
+										<Point x="6085" y="6615"/>
+										<Point x="6588" y="6615"/>
+										<Point x="6588" y="6694"/>
+										<Point x="7091" y="6694"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/45add/4162/1A98/528b61c6674b">
+									<position>
+										<Point x="17621" y="6112"/>
+									</position>
+									<size>
+										<Size width="212" height="317"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/45add/4162/1A98/528b61c6674b" dstEquation="!ed/30268/4162/1A98/528b60c2324">
+									<positions>
+										<Point x="17833" y="6271"/>
+										<Point x="19447" y="6271"/>
+										<Point x="19447" y="6165"/>
+										<Point x="21061" y="6165"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
