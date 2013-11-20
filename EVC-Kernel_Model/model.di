@@ -27,10 +27,23 @@
       <availablePage>
         <emfPageIdentifier href="model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
       </availablePage>
+      <availablePage>
+        <emfPageIdentifier href="model.notation#_SVPaoFEHEeO7P43e0b1Sog"/>
+      </availablePage>
     </pageList>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0">
       <windows>
-        <children xsi:type="di:TabFolder"/>
+        <children xsi:type="di:TabFolder">
+          <children>
+            <emfPageIdentifier href="model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="model.notation#_cWq30E3cEeOt6onMc6NYxA"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="model.notation#_SVPaoFEHEeO7P43e0b1Sog"/>
+          </children>
+        </children>
       </windows>
     </sashModel>
   </di:SashWindowsMngr>
