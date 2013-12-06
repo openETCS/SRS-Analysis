@@ -13,7 +13,6 @@ WP3 Repository for SysML modelling of the SRS
 =============================================
 
 In our Braunschweig workshop on WP3 activities we agreed to concentrate activities for getting SysML modelling started in this repository.
-The repository is by purpose private for the time being.
 * It must not be made public without explicit permission of the active committers.
 * The Activity is closely related to the [SSRS](https://github.com/openETCS/SSRS) activities.
 * We will definitly need the material collected in the SSRS [wiki](https://github.com/openETCS/SSRS/wiki).
