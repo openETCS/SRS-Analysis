@@ -13,21 +13,27 @@
     <availablePage>
       <emfPageIdentifier href="Papyrus_sandbox.notation#_VwSSgH7YEeO87JlxPhPkkw"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="Papyrus_sandbox.notation#_TFPEQH9WEeOTRo7rRPKOaQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="Papyrus_sandbox.notation#_Q2PLMH9YEeOTRo7rRPKOaQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="Papyrus_sandbox.notation#_8GMY0H9ZEeOTRo7rRPKOaQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="Papyrus_sandbox.notation#_8oNO0H9bEeOTRo7rRPKOaQ"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="Papyrus_sandbox.notation#_NEDgwH9dEeOTRo7rRPKOaQ"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
           <emfPageIdentifier href="Papyrus_sandbox.notation#_xod3IH7UEeO87JlxPhPkkw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="Papyrus_sandbox.notation#_HkksoH7WEeO87JlxPhPkkw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="Papyrus_sandbox.notation#_PJMUoH7WEeO87JlxPhPkkw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="Papyrus_sandbox.notation#_VwSSgH7YEeO87JlxPhPkkw"/>
         </children>
       </children>
     </windows>

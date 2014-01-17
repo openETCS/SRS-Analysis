@@ -1,51 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_TzwRMH7UEeO87JlxPhPkkw" name="SysMLmodel">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_b_DgcH9dEeOTRo7rRPKOaQ" annotatedElement="_5u-RgH9TEeOTRo7rRPKOaQ _EesOcH9SEeOTRo7rRPKOaQ">
+      <body>Commented Diagrams</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_gCDaEH7UEeO87JlxPhPkkw">
       <importedPackage xmi:type="uml:Model" href="pathmap://SysML_LIBRARIES/SysMLPrimitiveTypes.uml#_AnZiYLXmEduHWpAaWjM62w"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_2wmOkH7UEeO87JlxPhPkkw" name="Types">
-      <packagedElement xmi:type="uml:Class" xmi:id="_GHm_YH7WEeO87JlxPhPkkw" name="Block1"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_LNOOUH7WEeO87JlxPhPkkw" name="Enumeration1">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LfSOsH7WEeO87JlxPhPkkw" name="EnumerationLiteral1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lsb54H7WEeO87JlxPhPkkw" name="EnumerationLiteral2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L3LKQH7WEeO87JlxPhPkkw" name="EnumerationLiteral3"/>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_H_tMMH9UEeOTRo7rRPKOaQ" annotatedElement="_gkixMH7WEeO87JlxPhPkkw">
+        <body>Dimension is a general Physical family</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OVMHkH9UEeOTRo7rRPKOaQ" annotatedElement="_xphVIH7WEeO87JlxPhPkkw _B8J2IH7XEeO87JlxPhPkkw">
+        <body>Units ar used to express variable of a certain dimension</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Y8lkEH9UEeOTRo7rRPKOaQ" annotatedElement="_g2rNkH7XEeO87JlxPhPkkw">
+        <body>Each variable have an associated Value Type with dimension and unit</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_f4jQoH9UEeOTRo7rRPKOaQ">
+        <annotatedElement xmi:type="uml:Generalization" href="#_8N_kAH7XEeO87JlxPhPkkw"/>
+        <annotatedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <body>Variable might also by declared as a specialization of a more general primite (here Real for example)</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5u-RgH9TEeOTRo7rRPKOaQ" name="Lenght">
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_gkixMH7WEeO87JlxPhPkkw" name="Lenght"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xphVIH7WEeO87JlxPhPkkw" name="Cm"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_B8J2IH7XEeO87JlxPhPkkw" name="m"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_g2rNkH7XEeO87JlxPhPkkw" name="L_ENDSECTION">
+          <generalization xmi:type="uml:Generalization" xmi:id="_8N_kAH7XEeO87JlxPhPkkw">
+            <general xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          </generalization>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_gkixMH7WEeO87JlxPhPkkw" name="Lenght"/>
-      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xphVIH7WEeO87JlxPhPkkw" name="Cm"/>
-      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_B8J2IH7XEeO87JlxPhPkkw" name="m"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_g2rNkH7XEeO87JlxPhPkkw" name="L_ENDSECTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="_8N_kAH7XEeO87JlxPhPkkw">
-          <general xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
-        </generalization>
+      <packagedElement xmi:type="uml:Package" xmi:id="_81L3sH9XEeOTRo7rRPKOaQ" name="Distance">
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_XoMnMH9YEeOTRo7rRPKOaQ" name="m"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_XoNOQH9YEeOTRo7rRPKOaQ" name="Cm"/>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_XoN1UH9YEeOTRo7rRPKOaQ" name="Distance"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_YmtocH9ZEeOTRo7rRPKOaQ" name="D_BG">
+          <generalization xmi:type="uml:Generalization" xmi:id="_D885sH9aEeOTRo7rRPKOaQ" general="_lnORYH9ZEeOTRo7rRPKOaQ"/>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_OqllsH7ZEeO87JlxPhPkkw" name="DataType1">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_REsQoH7ZEeO87JlxPhPkkw" name="L_ENDSECTION" type="_g2rNkH7XEeO87JlxPhPkkw"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-WpDYH9XEeOTRo7rRPKOaQ" name="Boolean">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_AdNKcH9cEeOTRo7rRPKOaQ" name="B_Side">
+          <generalization xmi:type="uml:Generalization" xmi:id="_YUizAH9cEeOTRo7rRPKOaQ">
+            <general xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </generalization>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0p40wH9YEeOTRo7rRPKOaQ" name="DataType">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_OqllsH7ZEeO87JlxPhPkkw" name="Location">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_REsQoH7ZEeO87JlxPhPkkw" name="L_ENDSECTION" type="_g2rNkH7XEeO87JlxPhPkkw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bCCtUH9XEeOTRo7rRPKOaQ" name="BG" type="_Lum4IH9aEeOTRo7rRPKOaQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_frioAH9XEeOTRo7rRPKOaQ" name="D_BG" type="_YmtocH9ZEeOTRo7rRPKOaQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ic3gIH9XEeOTRo7rRPKOaQ" name="B_Side" type="_AdNKcH9cEeOTRo7rRPKOaQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Lum4IH9aEeOTRo7rRPKOaQ" name="BaliseGroup"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_u3-EAH9ZEeOTRo7rRPKOaQ" name="Bytes&amp;Words">
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_lnORYH9ZEeOTRo7rRPKOaQ" name="WordType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YEGOIH9aEeOTRo7rRPKOaQ" name="boolean" aggregation="composite" association="_YD9rQH9aEeOTRo7rRPKOaQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUxjwH9aEeOTRo7rRPKOaQ" value="8"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wU0AAH9aEeOTRo7rRPKOaQ" value="8"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_YD9rQH9aEeOTRo7rRPKOaQ" name="IsComposedOf" memberEnd="_YEGOIH9aEeOTRo7rRPKOaQ _YEG1MH9aEeOTRo7rRPKOaQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YECjwH9aEeOTRo7rRPKOaQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YEDK0H9aEeOTRo7rRPKOaQ" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_YEG1MH9aEeOTRo7rRPKOaQ" name="wordtype" type="_lnORYH9ZEeOTRo7rRPKOaQ" association="_YD9rQH9aEeOTRo7rRPKOaQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOFIkH9aEeOTRo7rRPKOaQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOIy8H9aEeOTRo7rRPKOaQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IsnmcH9dEeOTRo7rRPKOaQ" name="Misc.">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_LNOOUH7WEeO87JlxPhPkkw" name="Enumeration1">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LfSOsH7WEeO87JlxPhPkkw" name="EnumerationLiteral1"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lsb54H7WEeO87JlxPhPkkw" name="EnumerationLiteral2"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L3LKQH7WEeO87JlxPhPkkw" name="EnumerationLiteral3"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_GyLb0H7VEeO87JlxPhPkkw" name="Cos">
-      <packagedElement xmi:type="uml:Class" xmi:id="_QapqkH7YEeO87JlxPhPkkw" name="MA_Managment">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_adeaYH7YEeO87JlxPhPkkw" name="TOblabla" visibility="public" type="_i90q0H7YEeO87JlxPhPkkw" aggregation="composite">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a1rfAH7YEeO87JlxPhPkkw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a1rfAX7YEeO87JlxPhPkkw" value="1"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_a1stIH7YEeO87JlxPhPkkw">
-            <value xsi:nil="true"/>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_idz4kH7ZEeO87JlxPhPkkw" name="flowport1" visibility="public" type="_OqllsH7ZEeO87JlxPhPkkw" aggregation="composite">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_irwN8H7ZEeO87JlxPhPkkw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_irw1AH7ZEeO87JlxPhPkkw" value="1"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_iryDIH7ZEeO87JlxPhPkkw">
-            <value xsi:nil="true"/>
-          </defaultValue>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_i90q0H7YEeO87JlxPhPkkw" name="FlowSpecification1">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_nv1oUH7YEeO87JlxPhPkkw" name="L_ENDSECTION" type="_g2rNkH7XEeO87JlxPhPkkw"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_YmkGoH7ZEeO87JlxPhPkkw" name="MSG" type="_OqllsH7ZEeO87JlxPhPkkw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9B6-gH7bEeO87JlxPhPkkw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9B7lkH7bEeO87JlxPhPkkw" value="1"/>
-        </ownedAttribute>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GyLb0H7VEeO87JlxPhPkkw" name="Blocks">
+      <packagedElement xmi:type="uml:Package" xmi:id="_EesOcH9SEeOTRo7rRPKOaQ" name="MA_Managment">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_TDs6kH9TEeOTRo7rRPKOaQ" annotatedElement="_i90q0H7YEeO87JlxPhPkkw _4K2o0H9SEeOTRo7rRPKOaQ">
+          <body>A solution for Data exchange is using Flow Specification.&#xD;
+&#xD;
+Eventualy a Usage relation can be use to graphicaly precise which flo specification is to be use for each Flow Port</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_u8JoIH9TEeOTRo7rRPKOaQ">
+          <body>Another solution is to use Data type that regroup several ValueType</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QapqkH7YEeO87JlxPhPkkw" name="MA_Managment">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_adeaYH7YEeO87JlxPhPkkw" clientDependency="_4K2o0H9SEeOTRo7rRPKOaQ" name="ToOtherBlock" visibility="public" type="_i90q0H7YEeO87JlxPhPkkw" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a1rfAH7YEeO87JlxPhPkkw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a1rfAX7YEeO87JlxPhPkkw" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a1stIH7YEeO87JlxPhPkkw">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_idz4kH7ZEeO87JlxPhPkkw" name="flowport1" visibility="public" type="_OqllsH7ZEeO87JlxPhPkkw" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_irwN8H7ZEeO87JlxPhPkkw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_irw1AH7ZEeO87JlxPhPkkw" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_iryDIH7ZEeO87JlxPhPkkw">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_i90q0H7YEeO87JlxPhPkkw" name="MA_Management_to_OtherBlock_Flow">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nv1oUH7YEeO87JlxPhPkkw" name="L_ENDSECTION" type="_g2rNkH7XEeO87JlxPhPkkw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YmkGoH7ZEeO87JlxPhPkkw" name="MSG" type="_OqllsH7ZEeO87JlxPhPkkw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9B6-gH7bEeO87JlxPhPkkw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9B7lkH7bEeO87JlxPhPkkw" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_4K2o0H9SEeOTRo7rRPKOaQ" name="Usage1" client="_adeaYH7YEeO87JlxPhPkkw" supplier="_i90q0H7YEeO87JlxPhPkkw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_T0ScsH7UEeO87JlxPhPkkw">
@@ -115,7 +185,6 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Blocks:Block xmi:id="_GHu7MH7WEeO87JlxPhPkkw" base_Class="_GHm_YH7WEeO87JlxPhPkkw"/>
   <Blocks:Dimension xmi:id="_gkl0gH7WEeO87JlxPhPkkw" base_InstanceSpecification="_gkixMH7WEeO87JlxPhPkkw"/>
   <Blocks:Unit xmi:id="_xpjxYH7WEeO87JlxPhPkkw" base_InstanceSpecification="_xphVIH7WEeO87JlxPhPkkw" dimension="_gkl0gH7WEeO87JlxPhPkkw"/>
   <Blocks:Unit xmi:id="_B8LrUH7XEeO87JlxPhPkkw" base_InstanceSpecification="_B8J2IH7XEeO87JlxPhPkkw" dimension="_gkl0gH7WEeO87JlxPhPkkw"/>
@@ -126,4 +195,9 @@
   <PortAndFlows:FlowProperty xmi:id="_nv8WAH7YEeO87JlxPhPkkw" base_Property="_nv1oUH7YEeO87JlxPhPkkw" direction="out"/>
   <PortAndFlows:FlowProperty xmi:id="_Yml70H7ZEeO87JlxPhPkkw" base_Property="_YmkGoH7ZEeO87JlxPhPkkw" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_id2U0H7ZEeO87JlxPhPkkw" base_Port="_idz4kH7ZEeO87JlxPhPkkw"/>
+  <Blocks:Dimension xmi:id="_XoQRkH9YEeOTRo7rRPKOaQ" base_InstanceSpecification="_XoN1UH9YEeOTRo7rRPKOaQ"/>
+  <Blocks:Unit xmi:id="_XoQRkX9YEeOTRo7rRPKOaQ" base_InstanceSpecification="_XoNOQH9YEeOTRo7rRPKOaQ" dimension="_XoQRkH9YEeOTRo7rRPKOaQ"/>
+  <Blocks:Unit xmi:id="_XoQ4oH9YEeOTRo7rRPKOaQ" base_InstanceSpecification="_XoMnMH9YEeOTRo7rRPKOaQ" dimension="_XoQRkH9YEeOTRo7rRPKOaQ"/>
+  <Blocks:ValueType xmi:id="_YmwrwH9ZEeOTRo7rRPKOaQ" base_DataType="_YmtocH9ZEeOTRo7rRPKOaQ" unit="_XoQ4oH9YEeOTRo7rRPKOaQ" dimension="_XoQRkH9YEeOTRo7rRPKOaQ"/>
+  <Blocks:ValueType xmi:id="_AdNxgH9cEeOTRo7rRPKOaQ" base_DataType="_AdNKcH9cEeOTRo7rRPKOaQ"/>
 </xmi:XMI>
