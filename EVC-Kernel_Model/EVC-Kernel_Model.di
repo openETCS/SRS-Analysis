@@ -3,40 +3,47 @@
   <di:SashWindowsMngr>
     <pageList>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_t159gDsSEeOBwZmy2iuqYw"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_t159gDsSEeOBwZmy2iuqYw"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_d0rsoDvCEeOhCa-ASInFcQ"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_d0rsoDvCEeOhCa-ASInFcQ"/>
       </availablePage>
       <availablePage emfPageIdentifier="/1"/>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_7kRcwDyYEeOxws0tMvLAWQ"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_7kRcwDyYEeOxws0tMvLAWQ"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_S2IK8DyfEeOxws0tMvLAWQ"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_S2IK8DyfEeOxws0tMvLAWQ"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_duT3IEewEeOD_uLtyj9IHw"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_duT3IEewEeOD_uLtyj9IHw"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_cWq30E3cEeOt6onMc6NYxA"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_cWq30E3cEeOt6onMc6NYxA"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_Zcu5cE3gEeOt6onMc6NYxA"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_SVPaoFEHEeO7P43e0b1Sog"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_SVPaoFEHEeO7P43e0b1Sog"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_v0UkIFKOEeOZ8Ov8qMqGXw"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_v0UkIFKOEeOZ8Ov8qMqGXw"/>
       </availablePage>
       <availablePage>
-        <emfPageIdentifier href="model.notation#_-A_eMFKOEeOZ8Ov8qMqGXw"/>
+        <emfPageIdentifier href="EVC-Kernel_Model.notation#_-A_eMFKOEeOZ8Ov8qMqGXw"/>
       </availablePage>
     </pageList>
     <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0">
       <windows>
-        <children xsi:type="di:TabFolder"/>
+        <children xsi:type="di:TabFolder">
+          <children>
+            <emfPageIdentifier href="EVC-Kernel_Model.notation#_t159gDsSEeOBwZmy2iuqYw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="EVC-Kernel_Model.notation#_7kRcwDyYEeOxws0tMvLAWQ"/>
+          </children>
+        </children>
       </windows>
     </sashModel>
   </di:SashWindowsMngr>
@@ -45,7 +52,7 @@
   </org.eclipse.papyrus.infra.table.instance.papyrustableinstance:PapyrusTableInstance>
   <tableinstance2:TableInstance2 customizations="/2/@localCustomizations.0 /2/@localCustomizations.1" description="Requirements produced during the SRS analysis for GeographicPositionReporting function.">
     <tableConfiguration href="platform:/plugin/org.eclipse.papyrus.sysml.table.requirement/resources/requirement.papyrustableconfiguration#//@TableConfiguration"/>
-    <context href="model.uml#_J2e1oDu-EeOhCa-ASInFcQ"/>
+    <context href="EVC-Kernel_Model.uml#_J2e1oDu-EeOhCa-ASInFcQ"/>
     <columns xsi:type="tableinstance:DefaultLabelColumn"/>
     <columns xsi:type="tableinstance:MetaClassColumn" isHidden="true"/>
     <columns xsi:type="tableinstance:EContainerColumn" isHidden="true"/>
@@ -233,7 +240,7 @@
       <reference href="http://www.eclipse.org/uml2/4.0.0/UML#//Class/superClass"/>
     </columns>
     <rows>
-      <element href="model.uml#_TwpmoDvoEeOhCa-ASInFcQ"/>
+      <element href="EVC-Kernel_Model.uml#_TwpmoDvoEeOhCa-ASInFcQ"/>
     </rows>
     <localCustomizations metamodelURI="http://www.eclipse.org/uml2/4.0.0/UML" allQuerySetsAvailable="false">
       <types metaclassName="uml.Element">
